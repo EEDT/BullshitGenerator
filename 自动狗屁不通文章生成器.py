@@ -41,7 +41,7 @@ if __name__ == "__main__":
     xx = input("请输入文章主题:")
     for x in xx:
         tmp = str()
-        while ( len(tmp) < int(random.uniform(600,1200)) ) :
+        while ( len(tmp) < random.randint(800,1500) ) :
             分支 = random.randint(0,100)
             if 分支 < 5:
                 tmp += 另起一段()
@@ -50,4 +50,4 @@ if __name__ == "__main__":
             else:
                 tmp += next(下一句废话)
         tmp = tmp.replace("x",xx)
-        print(tmp) 
+        print(tmp)
