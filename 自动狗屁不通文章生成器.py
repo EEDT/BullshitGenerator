@@ -13,7 +13,6 @@ data = readJSON.读JSON文件("data.json")
 xx = "学生会退会"
 
 重复度 = 2
-
 def 洗牌遍历(列表):
     global 重复度
     池 = list(列表) * 重复度
