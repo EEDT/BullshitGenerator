@@ -1,6 +1,6 @@
-let 人名 = "xx"
-let 事情 = "xx"
-let 动词 = "xx"
+let 人名 = "jack normany"
+let 事情 = "things"
+let 动词 = "do"
 let 主语 = [
    "你",
    "我",
