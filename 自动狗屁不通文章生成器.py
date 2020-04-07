@@ -36,9 +36,15 @@ def 另起一段():
     xx += "\r\n"
     xx += "    "
     return xx
-
+def Do_You_Want_to_Random():
+    isr = input("你要随机生成吗？[y/n]")
+    return isr == "y"
 if __name__ == "__main__":
     xx = input("请输入文章主题:")
+    if Do_You_Want_to_Random():
+        r = random.randint(600,1200)
+    else:
+        r = int(input("输入文章字数"))
     for x in xx:
         tmp = str()
         while ( len(tmp) < random.randint(800,1500) ) :
