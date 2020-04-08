@@ -37,7 +37,7 @@ def 另起一段():
     xx += "    "
     return xx
 def Do_You_Want_to_Random():
-    isr = input("你要随机生成吗？[y/n]")
+    isr = input("你要随机生成文章的字数吗？[y/n]")
     return isr == "y"
 if __name__ == "__main__":
     xx = input("请输入文章主题:")
