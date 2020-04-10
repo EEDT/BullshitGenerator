@@ -4,6 +4,7 @@
 import os, re
 import random,readJSON
 
+
 data = readJSON.读JSON文件("data.json")
 名人名言 = data["famous"] # a 代表前面垫话，b代表后面垫话
 前面垫话 = data["before"] # 在名人名言前面弄点废话
@@ -11,7 +12,6 @@ data = readJSON.读JSON文件("data.json")
 废话 = data['bosh'] # 代表文章主要废话来源
 
 xx = "学生会退会"
-
 重复度 = 2
 def 洗牌遍历(列表):
     global 重复度
@@ -47,7 +47,7 @@ if __name__ == "__main__":
         r = int(input("输入文章字数:"))
     for x in xx:
         tmp = str()
-        while ( len(tmp) < random.randint(800,1500) ) :
+        while ( len(tmp) < r ) :
             分支 = random.randint(0,100)
             if 分支 < 5:
                 tmp += 另起一段()
@@ -57,3 +57,4 @@ if __name__ == "__main__":
                 tmp += next(下一句废话)
         tmp = tmp.replace("x",xx)
         print(tmp)
+        
