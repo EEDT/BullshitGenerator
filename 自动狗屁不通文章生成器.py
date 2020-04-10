@@ -47,7 +47,7 @@ if __name__ == "__main__":
         r = int(input("输入文章字数:"))
     for x in xx:
         tmp = str()
-        while ( len(tmp) < random.randint(800,1500) ) :
+        while ( len(tmp) < r ) :
             分支 = random.randint(0,100)
             if 分支 < 5:
                 tmp += 另起一段()
