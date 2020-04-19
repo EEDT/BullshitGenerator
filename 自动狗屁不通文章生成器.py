@@ -57,4 +57,3 @@ if __name__ == "__main__":
                 tmp += next(下一句废话)
         tmp = tmp.replace("x",xx)
         print(tmp)
-        
